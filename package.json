@@ -9,7 +9,7 @@
     "npm": "5.5.1"
   },
   "scripts": {
-    "start": "babel-node  ./index"
+    "start": "node index.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
