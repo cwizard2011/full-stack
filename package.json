@@ -8,8 +8,15 @@
     "node": "8.9.2",
     "npm": "5.5.1"
   },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
   "scripts": {
-    "start": "node index.js"
+    "babel-node": "babel-node --presets=latest",
+    "start": "node index.js",
+    "dev": "nodemon --exec yarn run babel-node -- ./index.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -17,11 +24,15 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.17.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
   }
 }

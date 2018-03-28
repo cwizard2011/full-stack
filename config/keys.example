@@ -1,0 +1,4 @@
+export default {
+  googleClientID: 'Google client ID',
+  googleClientSecret: 'Google Client secret'
+}
