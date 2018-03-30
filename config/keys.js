@@ -1,8 +1,6 @@
-import devKeys from './dev';
-import prodKeys from './prod';
 
 if (process.env.NODE_ENV === 'production'){
-  export default prodKeys;
+  export default require('./prod')
 } else {
-  export default devKeys;
+  export default require('./dev')
 }
