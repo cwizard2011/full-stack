@@ -1,4 +1,6 @@
 export default {
   googleClientID: 'Google client ID',
-  googleClientSecret: 'Google Client secret'
+  googleClientSecret: 'Google Client secret',
+  mongoURI: 'MongoURI',
+  cookieKey: 'random cookie key'
 }
