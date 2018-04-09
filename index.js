@@ -1,10 +1,12 @@
 import express from 'express';
-import './models/User'
+import './models/User';
+import './models/Survey'
 import mongoose from 'mongoose';
 import  './services/passport';
 import keys from './config/keys';
 import authRoutes from './routes/authRoutes';
 import billingRoutes from './routes/billingRoutes'; 
+import surveyRoutes from './routes/surveyRoutes'
 import cookieSession from 'cookie-session';
 import passport from 'passport';
 import bodyParser from 'body-parser';
@@ -26,6 +28,7 @@ app.use(passport.session())
 
 authRoutes(app);
 billingRoutes(app);
+surveyRoutes(app);
 
 if (process.env.NODE_ENV=== 'production') {
   app.use(express.static('client/build'));
